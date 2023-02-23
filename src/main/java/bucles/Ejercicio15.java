@@ -24,12 +24,11 @@ se deberán mostrar 2^1,2^2,2^3, 2^4 y 2^5.
         int base=input.nextInt();
         System.out.println("Ingrese el exponente ");
         int exponente=input.nextInt();
-        
-        for (int i = 0; i < exponente; i++) {
-            for (int j = 0; j < 10; j++) {
-                
-            }
-            System.out.println(base+"^"+exponente+"="+base*base);
+        int potencia=1;
+        for (int i = 1; i <= exponente; i++) {
+            potencia*=base;
+            System.out.println(base+"^"+i+"="+potencia);
+
             
         }
     }
